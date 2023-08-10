@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miro Tour</title>
+    <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header id="event-description">
+
+        <div class="icon">
+            <div id="icon-logo" class="icon-img"></div>
+        </div>
+             
+        <div id="disclaimer">
+            <h2>Transfer e Passeios</h2>
+            <p class="about-event">
+                CONHEÇA AS PRAIAS MAIS LINDAS DE PERNAMBUCO CONOSCO!
+            </p>
+            <p class="chamada">
+                Preencha nosso formulário e entraremos em contato o mais breve!</p>
+        </div>
+        <div id="subscription-form">
+            <div class="dados">
+                <p>DADOS PARA CONTATO</p>
+            </div>
+            <form action="https://formsubmit.co/mirotourpe@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="form-group">
+                <label for="phone">Whatsapp</label>
+                <input type="text" name="phone" placeholder="(00) 00000-0000">
+            </div>
+            <div class="form-group">
+                <label>Adultos:</label>
+                <input type="text" class="form-control" placeholder="0" name="adultos" maxlength="4">
+            </div>
+            <div class="form-group">
+                <label>Crianças:</label>
+                <input type="text" class="form-control" placeholder="0" name="crianças" maxlength="4">
+            </div>
+            <div class="form-group">
+                <label>Bebês:</label>
+                <input type="text" class="form-control" placeholder="0" name="bebes" maxlength="4">
+            </div>
+            
+            <div class="form-group">
+                <label for="interest">Origem</label>
+                <select name="interest">
+                  <option value="" disabled selected>Selecione</option> 
+                  <option value="aerorecife">Aeroporto Recife - PE</option>
+                  <option value="hotelrecife">Hoteis Recife - PE</option>
+                  <option value="cabostagos">Cabo de Santo Agostinho - PE</option> 
+                  <option value="porto">Porto de Galinhas - PE</option>
+                  <option value="maracaipe">Maracaipe - PE</option>  
+                  <option value="serrambi">Serrambi - PE</option>  
+                  <option value="sirinhaem">Sirinhaém - PE</option> 
+                  <option value="carneiros">Praia dos Carneiros - PE</option>
+                  <option value="tamandare">Praia de Tamandaré - PE</option> 
+                  <option value="saojose">São José da Coroa Grande - PE</option> 
+                  <option value="olinda">Olinda - PE</option> 
+                  <option value="caruaru">Caruaru - PE</option>
+                  <option value="campinagrande">Campina Grande - PB</option> 
+                  <option value="joaopessoa">João Pessoa - PB</option>
+                  <option value="maragogi">Maragogi - AL</option> 
+                  <option value="japaratinga">Japaratinga - AL</option>
+                  <option value="milagres">São Miguel dos Milagres - AL</option> 
+                  <option value="hotelmaceio">Hoteis Maceió - AL</option>   
+                  <option value="aeromaceio">Aeroporto Maceió - AL</option>                  
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="interest">Destino</label>
+                <select name="interest">
+                  <option value="" disabled selected>Selecione</option> 
+                  <option value="aerorecife">Aeroporto Recife - PE</option>
+                  <option value="hotelrecife">Hoteis Recife - PE</option>
+                  <option value="cabostagos">Cabo de Santo Agostinho - PE</option> 
+                  <option value="porto">Porto de Galinhas - PE</option>
+                  <option value="maracaipe">Maracaipe - PE</option>  
+                  <option value="serrambi">Serrambi - PE</option>  
+                  <option value="sirinhaem">Sirinhaém - PE</option> 
+                  <option value="carneiros">Praia dos Carneiros - PE</option>
+                  <option value="tamandare">Praia de Tamandaré - PE</option> 
+                  <option value="saojose">São José da Coroa Grande - PE</option> 
+                  <option value="olinda">Olinda - PE</option> 
+                  <option value="caruaru">Caruaru - PE</option>
+                  <option value="campinagrande">Campina Grande - PB</option> 
+                  <option value="joaopessoa">João Pessoa - PB</option>
+                  <option value="maragogi">Maragogi - AL</option> 
+                  <option value="japaratinga">Japaratinga - AL</option>
+                  <option value="milagres">São Miguel dos Milagres - AL</option> 
+                  <option value="hotelmaceio">Hoteis Maceió - AL</option>   
+                  <option value="aeromaceio">Aeroporto Maceió - AL</option>                  
+                </select>
+                  <label for="data-ida">Data de Ida:</label>
+                  <input type="date" id="data-ida" name="data-ida" required>
+
+                  <label for="data-volta">Data de Volta:</label>
+                  <input type="date" id="data-volta" name="data-volta" required>
+            </div>
+            <input type="submit" class="btn" value="Enviar">
+
+            
+          </form>
+        </div>
+        <a class="whatsapp" href="https://wa.me/558189545558" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </header>
+    <section id="key-benefits">
+        <h2>TEMOS TÁXIS PARA ATÉ 4 PASSAGEIROS, MICRO ÔNIBUS E VANS</h2>
+        <div class="benefits">
+            <div class="benefit">
+                <div id="benefit-1" class="benefit-img"></div>
+                <p>
+                    TÁXI
+                </p>                
+            </div>
+            <div class="benefit">
+                <div id="benefit-2" class="benefit-img"></div>
+                <p>
+                    VANS
+                </p>                
+            </div>
+            <div class="benefit">
+                <div id="benefit-3" class="benefit-img"></div>
+                <p>
+                    MICRO ÔNIBUS
+                </p>                
+            </div>
+        </div>
+    </section>
+    <section id="passeios">
+        <div class="passeios">
+            <h2>PASSEIOS</h2>
+        </div>
+    </section>
+        <section id="key-details">
+            <div class="details" id="deta-1">
+                <div id="detail-1" class="details-img"> </div>
+                <div class="detail-description">
+                <h3>PORTO DE GALINHAS</h3>
+                <ul>
+                    <li>Localizada em Pernambuco</li>
+                    <li>Piscinas naturais de águas cristalinas</li>
+                    <li>Eleita a melhor praia do Brasil por dez vezes consecutivas</li>
+                    <li>Apenas a uma hora do aeropoto de Recife</li>
+                    <li>A paz que você procura para suas férias</li>
+                </ul>
+            </div>
+        </div>
+            <div class="details" id="deta-2"> 
+                <div class="detail-description">              
+                <h3>PASSEIO DE BUGGY</h3>
+                <ul>
+                    <li>Conhecer o melhor litoral sul de Pernambuco</li>
+                    <li>São mais de 16km de praias</li>
+                    <li>Você irá conhecer as praias de Porto de Galinhas, Muro Alto, </li>
+                    <li>Pontal do Cupe, Maracaípe e Pontal de Maracaípe</li>
+                    <li>Parada especial na praia de Camboa</li>
+                </ul>
+            </div>
+                <div id="detail-2" class="details-img"> </div>
+            
+        </div>
+            <div class="details" id="deta-3">
+                <div id="detail-3" class="details-img"> </div>
+                <div class="detail-description"> 
+                <h3>ILHA DE SANTO ALEIXO</h3>
+                <ul>
+                    <li>Localizada entre Porto de Galinhas e Carneiros</li>
+                    <li>Coberta por rochedos vulcânicos e vegetação nativa</li>
+                    <li>Pensando na preservação o acesso a ilha é limitado</li>
+                    <li>Na ilha há receptivos em forma de barracas de praias, servindo refeições completas</li>
+                    <li>Para ter acesso a ilha o viajante precisa embarcar em uma lancha na Praia de Barra de Sirinhaém</li>
+                    <li>A travessia tem duração de 15 mim.</li>
+                </ul>
+            </div>
+            </div>
+            <div class="details" id="deta-4">
+                <div class="detail-description"> 
+                <h3>PRAIA DE CALHEITAS</h3>
+                <ul>
+                    <li>Águas Cristalinas e Mornas</li>
+                    <li>A região é cercada por pedras, belíssima vegetação</li>
+                    <li>O pequeno itinerário é percorrido por dois morros de pedra</li>
+                    <li>Um visual digno dos melhores registros fotográficos</li>
+                    <li>Para quem gosta de aventuras, terá a tirolesa, passeio de lancha, etc</li>
+                </ul>
+                </div>
+                <div id="detail-4" class="details-img"> </div>
+            </div>
+            <div class="details" id="deta-5">
+                <div id="detail-5" class="details-img"> </div>
+                <div class="detail-description"> 
+                <h3>PRAIA DOS CARNEIROS</h3>
+                <ul>
+                    <li>A Praia dos Carneiros é uma das preferidas para esportes náuticos entre os turistas</li>
+                    <li>Águas claras, pouca profundidade e muito espaço para se divertir e tomar sol</li>
+                    <li>Os coqueirais fazem de Carneiros um belo exemplar de praia nordestina</li>
+                    <li>Fica a cerca de 90 km ao sul do Recife</li>
+                    <li>Você ficará encantado com a natureza rudimentar, exuberante e selvagem</li>
+                </ul>
+            </div>
+            </div>
+            <div class="details" id="deta-6">
+                <div class="detail-description">
+                <h3>SÃO MIGUEL DOS MILAGRES</h3>
+                <ul>
+                    <li>Praias quase desertas de águas mornas de tons azulados e coqueirais</li>
+                    <li>É um passeio com natureza deslumbrante</li>
+                    <li>Na maré baixa permite que os visitantes desfrutem as deliciosas piscinas naturais</li>
+                    <li>Milagres faz parte da Costa de Alagoas, maior área de proteção ambiental do mundo</li>
+                    <li>É um lugar perfeito para viver a beleza de se estar no que chamamos de paraíso.</li>
+                </ul>
+                </div>
+                <div id="detail-6" class="details-img"> </div>
+            </div>
+            <div class="details" id="deta-7">
+                <div id="detail-7" class="details-img"> </div>
+                <div class="detail-description"> 
+                <h3>MARAGOGI</h3>
+                <ul>
+                    <li>Quem vai a Maragogi não se arrepende, tamanha a beleza!</li>
+                    <li>Piscinas naturais formadas por recifes de corais, no período da maré baixa</li>
+                    <li>Maragogi hoje é conhecido como o caribe Brasileiro por sua cor e águas cristalinas</li>
+                    <li>Tem o famoso Caminho de Moisés, onde o mar abre e aparece uma passagem no meio do mar</li>
+                    <li>Também vai conhecer as praias de Antunes, Barra Grande e Alto do Cruzeiro </li>
+                </ul>
+            </div>
+            </div>
+            <div class="details" id="deta-8">
+                <div class="detail-description"> 
+                <h3>PASSEIO PARA CARUARU</h3>
+                <ul>
+                    <li>A “Capital do Forró”, é uma cidade pernambucana muito charmosa</li>
+                    <li>A cerca de 130 km de Recife, se localiza Caruaru, uma cidade com cerca de 360 mil habitantes.</li>
+                    <li>Tem a famosa Feira Livre de Caruaru que reúne mercadorias, desde artesanato à comida típicas</li>
+                    <li>A verdadeira Cultura Popular nordestina, Festa de São João e aos museus da cidade</li>
+                    <li>Museu do Barro de Caruaru e o Museu do Cordel. Tem também o Poló Caruaru</li>
+                </ul>
+                </div>
+                <div id="detail-8" class="details-img"> </div>
+            </div>
+            <div class="details" id="deta-9">
+                <div id="detail-9" class="details-img"> </div>
+                <div class="detail-description"> 
+                <h3>CASTELO DE BRENNAND</h3>
+                <ul>
+                    <li>O Instituto Ricardo Brennand é um espaço cultural sem fins lucrativos inaugurado em 2002</li>
+                    <li>Tem como missão a preservação, a difusão e o acesso à cultura e herança material e imaterial</li>
+                    <li>Localizado nas terras do antigo engenho São João, no bairro da Várzea, ocupa uma área de 77.603 m²</li>
+                    <li>Cercada por uma reserva de mata atlântica preservada.</li>
+                    <li>Possui uma das mais modernas instalações museológicas do Brasil</li>
+                    <li>Pinacoteca, Biblioteca, Auditório, Jardins das Esculturas e uma Galeria para exposições</li>
+                </ul>
+            </div>
+            </div>
+            <div class="details" id="deta-10">
+                <div class="detail-description">
+                <h3>CITY TOUR RECIFE & OLINDA</h3>
+                <ul>
+                    <li>Neste passeio, você terá, de uma só vez, o melhor do Recife e de Olinda</li>
+                    <li>No começo, passeio panorâmico pela orla de Boa Viagem</li>
+                    <li>Seguimos até a praça do Marco Zero, passaremos pelo cais José Estelita</li>
+                    <li>Vamos conhecer a Embaixada dos bonecos gigantes de Olinda, e o museu do Frevo, entre outros</li>
+                    <li>Passaremos na Ponte Maurício de Nassau, e a Praça da República</li>
+                    <li>Em Olinda, visitaremos o convento de São Francisco, Alto da Sé, com as Igrejas da Sé e da Misericórdia</li>
+                    <li>Temos a mais bela vista das cidades do Recife e de Olinda</li>
+                    <li>Iremos finalizar com a visita ao Mosteiro de São Bento</li>
+                </ul>
+                </div>
+                <div id="detail-10" class="details-img"> </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <h3>MIRO TOUR</h3>
+            <p>Aqui a diversão é garantida!</p>
+            <p><span>Entre em contato:</span> mirotourpe@gmail.com </p>
+            <p><span>Whatsapp:</span> (81)98954-5558 </p>
+            <p><span>Instagram:</span> @mirotourpe </p>
+        </footer>
+        
+</body>
+</html>

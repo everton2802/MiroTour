@@ -1,0 +1,517 @@
+:root {
+    --primary: #0f3244;
+    --secondary: #3c9cd6;
+    --tertiary: #faf950;
+    --text-color: #fff;
+    --text-secondary:#000;
+    --text-tertiary: #5d5d5d;
+}
+
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Event form */
+
+#event-description {
+    background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+       url("../img/GettyImages-697769530.webp");
+    background-position: center;
+    background-size: cover;
+    height: 125vh;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    color: var(--text-color);
+}
+
+.icon .icon-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size:cover;
+    background-position: center;
+    margin-bottom: 15em; 
+}
+
+#icon-logo {
+    background-image: url(../img/logo.jpeg);
+    
+}
+
+#disclaimer h2,
+#disclaimer .chamada {
+    color: var(--tertiary);
+    
+}
+
+#disclaimer .chamada {
+    font-size: 1em;
+    text-transform: uppercase;
+    max-width: 400px;
+    height: 15em
+}
+
+#disclaimer h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    
+}
+
+#disclaimer .about-event {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bolder;
+    margin-bottom: 1em;
+    
+}
+
+#disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+#disclaimer .chamada {
+    font-weight: bold;
+}
+
+#subscription-form {
+    background-color: var(--primary);
+    padding: 25px;
+    max-width: 10000px;
+}
+
+#subscription-form {
+    font-size: 14px;
+    color: var(--tertiary);
+    margin-bottom: 1em;
+}
+
+#subscription-form .dados {
+    font-size: 1.5em;
+    max-width: 300px;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.form-group {
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 0.9em;
+}
+
+.form-group label {
+    color: var(--tertiary);
+    margin-bottom: .3em;
+    font-weight:bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 4px 6px;
+    border-radius:50px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--secondary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 40px;
+    box-sizing: 1px 1px 2px #888;
+    z-index: 1000;
+        
+    animation-name: pulsar;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;   
+} 
+
+.fa-whatsapp {
+       margin-top: 15px;
+}
+
+@keyframes pulsar {
+    0% {
+        height: 65px;
+        width: 65px;
+    }
+    100% {
+        height: 75px;
+        width: 75px;
+    }
+}
+
+/* Benefits section */
+
+#key-benefits h2 {
+    background-color: var(--tertiary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+    font-weight:bold;
+}
+
+.benefits {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+       url("../img/fundo.png");
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.benefit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-color);
+    font-weight:bold;
+}
+
+.benefit .benefit-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em; 
+    
+}
+
+#benefit-1 {
+    background-image: url(../img/C770FDB7-95E5-4B8F-B5F7-DA1664E9656A.png);
+}
+
+#benefit-2 {
+    background-image: url(../img/van.jpeg);
+}
+
+#benefit-3 {
+    background-image: url(../img/A99F926F-3937-4A14-97C9-1404B80B0D11.png);
+}
+
+/* Event details container */
+
+#key-details {
+    background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+       url("../img/fundo.png");
+    width: 100%;
+    padding: 1em;
+    margin:0 auto;
+    
+    
+}
+
+.passeios h2 {
+    background-color: var(--tertiary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+    font-weight:bold; 
+    
+}
+
+#details {
+    width: 80%;
+    margin: 0 auto;
+}
+.details h3 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--primary);
+
+}
+
+.details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10%;
+    width: 1000px;
+    margin: 100px;
+    margin-bottom: 4em;
+
+}
+
+.details .details-img {
+    width: 50%;
+}
+
+.details .details-img {
+    width: 600px;
+    height: 300px;
+    border-radius: 10%;
+    background-size:cover;
+    background-position:bottom;
+    margin-bottom: 1em;
+    display: flex;
+    line-height: 5em;
+
+}
+
+#detail-1 {
+    background-image: url(../img/porto.jpg);
+}
+
+#detail-2 {
+    background-image: url(../img/buggy.jpg);
+}
+
+#detail-3 {
+    background-image: url(../img/santoaleixo.jpg);
+}
+
+#detail-4 {
+    background-image: url(../img/calhetas.jpg);
+}
+
+#detail-5 {
+    background-image: url(../img/carneiros.jpg);
+}
+
+#detail-6 {
+    background-image: url(../img/Milagres.jpg);
+}
+
+#detail-7 {
+    background-image: url(../img/MARAGOGI.jpg);
+}
+
+#detail-8 {
+    background-image: url(../img/caruaru.jpg);
+}
+
+#detail-9 {
+    background-image: url(../img/castelo.jpg);
+}
+
+#detail-10 {
+    background-image: url(../img/rec-oli.jpg);
+}
+
+.details-description {
+    width: 100%;
+    padding-left:  2em;
+}
+
+.details-description ul {
+    list-style-position: inside ;
+    
+  
+}
+
+.details ul li {
+    margin-bottom: 1.5em;
+    font-style: italic;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    color: var(--primary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+#footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+#footer span {
+    font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+
+    /* Event Form */
+    #event-description {
+        flex-direction: column;
+        height: auto;
+       
+    }    
+
+    #disclaimer {
+        padding: 5em;
+        
+    }
+
+    #disclaimer h2 {
+        margin-bottom: 0.5em;
+        
+    }
+
+    #subscription-form {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    /* Benefits section */
+
+    #key-benefits h2 {
+        font-size: 100%;
+        max-width: 450px;
+        
+
+    }
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+       
+    }
+
+    .benefit {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+   
+   /* Event details container */
+   .details {
+    flex-direction: column;
+    margin-bottom: 1em;
+    gap: 0;
+    padding:0.5%;
+    width: 1em;
+    
+   }
+
+   #detail-1, #detail-2,
+   #detail-3, #detail-4,
+   #detail-5, #detail-6,
+   #detail-7, #detail-8,
+   #detail-9, #detail-10 {
+    width: 15em;
+    height: 10em;
+    margin-bottom: 2em;
+    
+   }
+
+   .detail-description {
+    padding: 0;
+    width: 15em;
+
+   }
+
+    #deta-2 .details-img,
+    #deta-4 .details-img,
+    #deta-6 .details-img,
+    #deta-8 .details-img,
+    #deta-10 .details-img {
+    order: 1;    
+    }
+
+    #deta-2 .detail-description,
+    #deta-4 .detail-description,
+    #deta-6 .detail-description,
+    #deta-8 .detail-description,
+    #deta-10 .detail-description {
+    order: 2;
+    }
+
+    /* Footer */
+    
+    #footer h3 {
+        font-size: 1.8em;
+        margin-bottom: .5em;
+    }
+    
+    #footer p:nth-child(2) {
+        margin-bottom: 1em;
+        font-size: 1em;
+    }
+    
+    #footer span {
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+
+    #footer .p {
+        font-size: 0.8em;
+    }
+}
+
+/* Página Obrigado */
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--secondary);
+    flex-direction: column;
+}
+
+.text {
+    font-size: 45px;
+    color: var(--tertiary);
+    margin-bottom: 30px;
+}
+
+.paragrafo {
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+
+.btn2 {
+    padding: 15px 55px;
+    background: var(--text-color);
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.btn2:hover {
+    border-radius: 16px;
+}
+
+
+
+
+
+    
+
+
